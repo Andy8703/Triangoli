@@ -1,0 +1,53 @@
+\doxysection{CIsosceles.\+h}
+\hypertarget{_c_isosceles_8h_source}{}\label{_c_isosceles_8h_source}\mbox{\hyperlink{_c_isosceles_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ ISOSCELES\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ ISOSCELES\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_c_triangle_8h}{CTriangle.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_isosceles}{Isosceles}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_triangle}{Triangle}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{float}\ height;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_isosceles_aa96d6e5d1e4536fb1f5b5d807870ad42}{Isosceles}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_isosceles_aa96d6e5d1e4536fb1f5b5d807870ad42}{Isosceles}}(\textcolor{keywordtype}{float}\ w,\ \textcolor{keywordtype}{float}\ h);}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_isosceles_aa96d6e5d1e4536fb1f5b5d807870ad42}{Isosceles}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_isosceles}{Isosceles}}\ \&r);}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_isosceles_a8149d345aa808da296aec662a93817d4}{\string~Isosceles}}();}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_isosceles}{Isosceles}}\&\ \mbox{\hyperlink{class_isosceles_ada32917f65261733e659cd7dad360dbb}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_isosceles}{Isosceles}}\ \&r);\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_isosceles_a9f976ece61beaf06dae9570f9ee14dd9}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_isosceles}{Isosceles}}\ \&r);}
+\DoxyCodeLine{00039\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_a9e31419266fac7efecc27d7058502669}{Init}}();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_a9e31419266fac7efecc27d7058502669}{Init}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_isosceles}{Isosceles}}\ \&r);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_ac71319822448895706af7d921aab52be}{Reset}}();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_a37dbd355e56e49dc101421c540d8171c}{SetHeight}}(\textcolor{keywordtype}{float}\ h);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_ac462f347a871506c518bd47f97ff5091}{SetWidth}}(\textcolor{keywordtype}{float}\ w);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_a9999a35505d93df911ecb78ac4f45080}{SetDim}}(\textcolor{keywordtype}{float}\ w,\ \textcolor{keywordtype}{float}\ h);}
+\DoxyCodeLine{00053\ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_aafe62906471f445cdfa0b6b88a7f3fb5}{GetDim}}(\textcolor{keywordtype}{float}\ \&w,\ \textcolor{keywordtype}{float}\ \&h);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_isosceles_a689f27c5eed02ada492b058ac8569be8}{GetHeight}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_isosceles_a2f36ac50ca836fb908e9bd7401948e50}{GetWidth}}();\ }
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_a2be1ef449754a8d51c183f47c235f7a0}{ErrorMessage}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_aaaf7ffdd748d2e3e433b3c32b54fde0a}{WarningMessage}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_isosceles_aab8b27eb4232270de588c2bef0e19ca6}{Dump}}();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

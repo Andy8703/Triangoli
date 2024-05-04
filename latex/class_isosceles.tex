@@ -1,0 +1,362 @@
+\doxysection{Isosceles Class Reference}
+\hypertarget{class_isosceles}{}\label{class_isosceles}\index{Isosceles@{Isosceles}}
+
+
+to manage an object with the shape of an isosceles triangle  
+
+
+
+
+{\ttfamily \#include $<$CIsosceles.\+h$>$}
+
+Inheritance diagram for Isosceles\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_isosceles}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ CONSTRUCTORS/\+DESTRUCTOR}\par
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_isosceles_aa96d6e5d1e4536fb1f5b5d807870ad42}\label{class_isosceles_aa96d6e5d1e4536fb1f5b5d807870ad42} 
+{\bfseries Isosceles} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_isosceles_a31a0edc4f442550230bb8574c9745a79}{Isosceles}} (float w, float h)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_isosceles_a7036bc7d025428823f92f30df7942750}{Isosceles}} (const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&r)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\Hypertarget{class_isosceles_a8149d345aa808da296aec662a93817d4}\label{class_isosceles_a8149d345aa808da296aec662a93817d4} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Isosceles} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ OPERATORS}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_isosceles}{Isosceles}} \& \mbox{\hyperlink{class_isosceles_ada32917f65261733e659cd7dad360dbb}{operator=}} (const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&r)
+\begin{DoxyCompactList}\small\item\em overload of operator = \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_isosceles_a9f976ece61beaf06dae9570f9ee14dd9}{operator==}} (const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&r)
+\begin{DoxyCompactList}\small\item\em overload of operator == \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ BASIC HANDLING}\par
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_isosceles_a9e31419266fac7efecc27d7058502669}\label{class_isosceles_a9e31419266fac7efecc27d7058502669} 
+void {\bfseries Init} ()
+\begin{DoxyCompactList}\small\item\em default initialization of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isosceles_a14f397fc9f4ea70352d1591bec82dadd}{Init}} (const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&r)
+\begin{DoxyCompactList}\small\item\em initialization of the object as a copy of an object \end{DoxyCompactList}\item 
+\Hypertarget{class_isosceles_ac71319822448895706af7d921aab52be}\label{class_isosceles_ac71319822448895706af7d921aab52be} 
+void {\bfseries Reset} ()
+\begin{DoxyCompactList}\small\item\em total reset of the object ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ GETTERS / SETTERS}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_isosceles_a37dbd355e56e49dc101421c540d8171c}{Set\+Height}} (float h)
+\begin{DoxyCompactList}\small\item\em set height of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isosceles_ac462f347a871506c518bd47f97ff5091}{Set\+Width}} (float w)
+\begin{DoxyCompactList}\small\item\em set width of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isosceles_a9999a35505d93df911ecb78ac4f45080}{Set\+Dim}} (float w, float h)
+\begin{DoxyCompactList}\small\item\em set width and length of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isosceles_aafe62906471f445cdfa0b6b88a7f3fb5}{Get\+Dim}} (float \&w, float \&h)
+\begin{DoxyCompactList}\small\item\em get width and length of the object \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_isosceles_a689f27c5eed02ada492b058ac8569be8}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em get length of the object \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_isosceles_a2f36ac50ca836fb908e9bd7401948e50}{Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em get width of the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ DEBUG and SERIALIZATION}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_isosceles_a2be1ef449754a8d51c183f47c235f7a0}{Error\+Message}} (const char \texorpdfstring{$\ast$}{*}string)
+\begin{DoxyCompactList}\small\item\em write an error message \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_isosceles_aaaf7ffdd748d2e3e433b3c32b54fde0a}{Warning\+Message}} (const char \texorpdfstring{$\ast$}{*}string)
+\begin{DoxyCompactList}\small\item\em write a warning message \end{DoxyCompactList}\item 
+\Hypertarget{class_isosceles_aab8b27eb4232270de588c2bef0e19ca6}\label{class_isosceles_aab8b27eb4232270de588c2bef0e19ca6} 
+void {\bfseries Dump} ()
+\begin{DoxyCompactList}\small\item\em for debugging\+: all about the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_triangle}{Triangle}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Triangle} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_triangle_aaadcbc166d6c69107f7b9129a31501c7}{Triangle}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Triangle} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_triangle}{Triangle}} \& \mbox{\hyperlink{class_triangle_ae34e100957bedf81493afcb4279ba8cc}{operator=}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em overload of operator = \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_triangle_af0f8cd56fc1a3a6f23b6fa25eaa1a0c3}{operator==}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em overload of operator == \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Init} ()
+\begin{DoxyCompactList}\small\item\em default initialization of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a69cd7fb4d208008ff6ec51367a558bb3}{Init}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em initialization of the object as a copy of an object \end{DoxyCompactList}\item 
+void {\bfseries Reset} ()
+\begin{DoxyCompactList}\small\item\em total reset of the object ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_triangle_ab152665e2e9d8249492f3cf6e21ef691}{Get\+Perimeter}} ()
+\begin{DoxyCompactList}\small\item\em get the perimeter of the object \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_triangle_a42dbd2426016fc99b97e15fe4c17d52e}{Get\+Area}} ()
+\begin{DoxyCompactList}\small\item\em get the area of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a7da90f62a58fd888d68c8ffc4c64701b}{Get\+Sides}} (float \&s0, float \&s1, float \&s2)
+\begin{DoxyCompactList}\small\item\em get the sides of the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_triangle_a55e0ecaf89ce342f7d828aefd6d5e555}{Error\+Message}} (const char \texorpdfstring{$\ast$}{*}string)
+\begin{DoxyCompactList}\small\item\em write an error message \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_aea58cf673f6459406ff46c2947878dc0}{Warning\+Message}} (const char \texorpdfstring{$\ast$}{*}string)
+\begin{DoxyCompactList}\small\item\em write a warning message \end{DoxyCompactList}\item 
+void {\bfseries Dump} ()
+\begin{DoxyCompactList}\small\item\em for debugging\+: all about the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_isosceles_a0eba77a24ada48c95ee84a3620eba950}\label{class_isosceles_a0eba77a24ada48c95ee84a3620eba950} 
+float {\bfseries height}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_triangle}{Triangle}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries sides} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_triangle}{Triangle}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_triangle_a489a2d36a014b9397779083376a0145f}{Set\+Sides}} (float s1, float s2, float s3)
+\begin{DoxyCompactList}\small\item\em sets the value of the three sides \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+to manage an object with the shape of an isosceles triangle 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_isosceles_a31a0edc4f442550230bb8574c9745a79}\label{class_isosceles_a31a0edc4f442550230bb8574c9745a79} 
+\index{Isosceles@{Isosceles}!Isosceles@{Isosceles}}
+\index{Isosceles@{Isosceles}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{Isosceles()}{Isosceles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Isosceles\+::\+Isosceles (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & width of the isosceles \\
+\hline
+{\em h} & height of the isosceles \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_isosceles_a7036bc7d025428823f92f30df7942750}\label{class_isosceles_a7036bc7d025428823f92f30df7942750} 
+\index{Isosceles@{Isosceles}!Isosceles@{Isosceles}}
+\index{Isosceles@{Isosceles}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{Isosceles()}{Isosceles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Isosceles\+::\+Isosceles (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & reference to the object that should be copied ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_isosceles_a2be1ef449754a8d51c183f47c235f7a0}\label{class_isosceles_a2be1ef449754a8d51c183f47c235f7a0} 
+\index{Isosceles@{Isosceles}!ErrorMessage@{ErrorMessage}}
+\index{ErrorMessage@{ErrorMessage}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{ErrorMessage()}{ErrorMessage()}}
+{\footnotesize\ttfamily void Isosceles\+::\+Error\+Message (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string }\end{DoxyParamCaption})}
+
+
+
+write an error message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & message to be printed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_isosceles_aafe62906471f445cdfa0b6b88a7f3fb5}\label{class_isosceles_aafe62906471f445cdfa0b6b88a7f3fb5} 
+\index{Isosceles@{Isosceles}!GetDim@{GetDim}}
+\index{GetDim@{GetDim}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{GetDim()}{GetDim()}}
+{\footnotesize\ttfamily void Isosceles\+::\+Get\+Dim (\begin{DoxyParamCaption}\item[{float \&}]{w,  }\item[{float \&}]{h }\end{DoxyParamCaption})}
+
+
+
+get width and length of the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & width \\
+\hline
+{\em h} & height \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_isosceles_a689f27c5eed02ada492b058ac8569be8}\label{class_isosceles_a689f27c5eed02ada492b058ac8569be8} 
+\index{Isosceles@{Isosceles}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily float Isosceles\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get length of the object 
+
+\begin{DoxyReturn}{Returns}
+height 
+\end{DoxyReturn}
+\Hypertarget{class_isosceles_a2f36ac50ca836fb908e9bd7401948e50}\label{class_isosceles_a2f36ac50ca836fb908e9bd7401948e50} 
+\index{Isosceles@{Isosceles}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily float Isosceles\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get width of the object 
+
+\begin{DoxyReturn}{Returns}
+width ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{class_isosceles_a14f397fc9f4ea70352d1591bec82dadd}\label{class_isosceles_a14f397fc9f4ea70352d1591bec82dadd} 
+\index{Isosceles@{Isosceles}!Init@{Init}}
+\index{Init@{Init}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Isosceles\+::\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+initialization of the object as a copy of an object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & reference to the object that should be copied ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_isosceles_ada32917f65261733e659cd7dad360dbb}\label{class_isosceles_ada32917f65261733e659cd7dad360dbb} 
+\index{Isosceles@{Isosceles}!operator=@{operator=}}
+\index{operator=@{operator=}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_isosceles}{Isosceles}} \& Isosceles\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+overload of operator = 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & reference to the object on the right side of the operator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to the object on the left side of the operator ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{class_isosceles_a9f976ece61beaf06dae9570f9ee14dd9}\label{class_isosceles_a9f976ece61beaf06dae9570f9ee14dd9} 
+\index{Isosceles@{Isosceles}!operator==@{operator==}}
+\index{operator==@{operator==}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Isosceles\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_isosceles}{Isosceles}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+overload of operator == 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & reference to the object on the right side of the operator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the two objects have the same width and the same length ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{class_isosceles_a9999a35505d93df911ecb78ac4f45080}\label{class_isosceles_a9999a35505d93df911ecb78ac4f45080} 
+\index{Isosceles@{Isosceles}!SetDim@{SetDim}}
+\index{SetDim@{SetDim}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{SetDim()}{SetDim()}}
+{\footnotesize\ttfamily void Isosceles\+::\+Set\+Dim (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+set width and length of the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & width \\
+\hline
+{\em h} & height \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_isosceles_a37dbd355e56e49dc101421c540d8171c}\label{class_isosceles_a37dbd355e56e49dc101421c540d8171c} 
+\index{Isosceles@{Isosceles}!SetHeight@{SetHeight}}
+\index{SetHeight@{SetHeight}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{SetHeight()}{SetHeight()}}
+{\footnotesize\ttfamily void Isosceles\+::\+Set\+Height (\begin{DoxyParamCaption}\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+set height of the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & height ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_isosceles_ac462f347a871506c518bd47f97ff5091}\label{class_isosceles_ac462f347a871506c518bd47f97ff5091} 
+\index{Isosceles@{Isosceles}!SetWidth@{SetWidth}}
+\index{SetWidth@{SetWidth}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{SetWidth()}{SetWidth()}}
+{\footnotesize\ttfamily void Isosceles\+::\+Set\+Width (\begin{DoxyParamCaption}\item[{float}]{w }\end{DoxyParamCaption})}
+
+
+
+set width of the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & width ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_isosceles_aaaf7ffdd748d2e3e433b3c32b54fde0a}\label{class_isosceles_aaaf7ffdd748d2e3e433b3c32b54fde0a} 
+\index{Isosceles@{Isosceles}!WarningMessage@{WarningMessage}}
+\index{WarningMessage@{WarningMessage}!Isosceles@{Isosceles}}
+\doxysubsubsection{\texorpdfstring{WarningMessage()}{WarningMessage()}}
+{\footnotesize\ttfamily void Isosceles\+::\+Warning\+Message (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string }\end{DoxyParamCaption})}
+
+
+
+write a warning message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & message to be printed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_isosceles_8h}{CIsosceles.\+h}}\item 
+\mbox{\hyperlink{_c_isosceles_8cpp}{CIsosceles.\+cpp}}\end{DoxyCompactItemize}

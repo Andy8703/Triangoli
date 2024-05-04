@@ -1,0 +1,263 @@
+\doxysection{Triangle Class Reference}
+\hypertarget{class_triangle}{}\label{class_triangle}\index{Triangle@{Triangle}}
+
+
+an abstract base class for \doxylink{class_triangle}{Triangle}  
+
+
+
+
+{\ttfamily \#include $<$CTriangle.\+h$>$}
+
+Inheritance diagram for Triangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_triangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ CONSTRUCTORS/\+DESTRUCTOR}\par
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_triangle_aaefe4ed500c07918d30c6f0e286332c5}\label{class_triangle_aaefe4ed500c07918d30c6f0e286332c5} 
+{\bfseries Triangle} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_triangle_aaadcbc166d6c69107f7b9129a31501c7}{Triangle}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\Hypertarget{class_triangle_a5199760a17454f4dc94c855a57e3a152}\label{class_triangle_a5199760a17454f4dc94c855a57e3a152} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Triangle} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ OPERATORS}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_triangle}{Triangle}} \& \mbox{\hyperlink{class_triangle_ae34e100957bedf81493afcb4279ba8cc}{operator=}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em overload of operator = \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_triangle_af0f8cd56fc1a3a6f23b6fa25eaa1a0c3}{operator==}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em overload of operator == \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ BASIC HANDLING}\par
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_triangle_a23467bb9fdd38fa482548409a0427a7f}\label{class_triangle_a23467bb9fdd38fa482548409a0427a7f} 
+void {\bfseries Init} ()
+\begin{DoxyCompactList}\small\item\em default initialization of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a69cd7fb4d208008ff6ec51367a558bb3}{Init}} (const \mbox{\hyperlink{class_triangle}{Triangle}} \&o)
+\begin{DoxyCompactList}\small\item\em initialization of the object as a copy of an object \end{DoxyCompactList}\item 
+\Hypertarget{class_triangle_af31ee0366359e2da4ebbbd4a3ce39049}\label{class_triangle_af31ee0366359e2da4ebbbd4a3ce39049} 
+void {\bfseries Reset} ()
+\begin{DoxyCompactList}\small\item\em total reset of the object ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ GETTERS}\par
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_triangle_ab152665e2e9d8249492f3cf6e21ef691}{Get\+Perimeter}} ()
+\begin{DoxyCompactList}\small\item\em get the perimeter of the object \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_triangle_a42dbd2426016fc99b97e15fe4c17d52e}{Get\+Area}} ()
+\begin{DoxyCompactList}\small\item\em get the area of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a7da90f62a58fd888d68c8ffc4c64701b}{Get\+Sides}} (float \&s0, float \&s1, float \&s2)
+\begin{DoxyCompactList}\small\item\em get the sides of the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ DEBUG and SERIALIZATION}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_triangle_a55e0ecaf89ce342f7d828aefd6d5e555}{Error\+Message}} (const char \texorpdfstring{$\ast$}{*}string)
+\begin{DoxyCompactList}\small\item\em write an error message \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_aea58cf673f6459406ff46c2947878dc0}{Warning\+Message}} (const char \texorpdfstring{$\ast$}{*}string)
+\begin{DoxyCompactList}\small\item\em write a warning message \end{DoxyCompactList}\item 
+\Hypertarget{class_triangle_ab34b7d491b73f6ca1b2a2ea19a37799b}\label{class_triangle_ab34b7d491b73f6ca1b2a2ea19a37799b} 
+void {\bfseries Dump} ()
+\begin{DoxyCompactList}\small\item\em for debugging\+: all about the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_triangle_a489a2d36a014b9397779083376a0145f}{Set\+Sides}} (float s1, float s2, float s3)
+\begin{DoxyCompactList}\small\item\em sets the value of the three sides \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_triangle_a4e8d79c6dd8b3d5b32179918df538b7a}\label{class_triangle_a4e8d79c6dd8b3d5b32179918df538b7a} 
+float {\bfseries sides} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+an abstract base class for \doxylink{class_triangle}{Triangle} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_triangle_aaadcbc166d6c69107f7b9129a31501c7}\label{class_triangle_aaadcbc166d6c69107f7b9129a31501c7} 
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{Triangle()}{Triangle()}}
+{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} \&}]{o }\end{DoxyParamCaption})}
+
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & reference to the object that should be copied ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_triangle_a55e0ecaf89ce342f7d828aefd6d5e555}\label{class_triangle_a55e0ecaf89ce342f7d828aefd6d5e555} 
+\index{Triangle@{Triangle}!ErrorMessage@{ErrorMessage}}
+\index{ErrorMessage@{ErrorMessage}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{ErrorMessage()}{ErrorMessage()}}
+{\footnotesize\ttfamily void Triangle\+::\+Error\+Message (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string }\end{DoxyParamCaption})}
+
+
+
+write an error message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & message to be printed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_triangle_a42dbd2426016fc99b97e15fe4c17d52e}\label{class_triangle_a42dbd2426016fc99b97e15fe4c17d52e} 
+\index{Triangle@{Triangle}!GetArea@{GetArea}}
+\index{GetArea@{GetArea}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{GetArea()}{GetArea()}}
+{\footnotesize\ttfamily float Triangle\+::\+Get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the area of the object 
+
+\begin{DoxyReturn}{Returns}
+area 
+\end{DoxyReturn}
+\Hypertarget{class_triangle_ab152665e2e9d8249492f3cf6e21ef691}\label{class_triangle_ab152665e2e9d8249492f3cf6e21ef691} 
+\index{Triangle@{Triangle}!GetPerimeter@{GetPerimeter}}
+\index{GetPerimeter@{GetPerimeter}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{GetPerimeter()}{GetPerimeter()}}
+{\footnotesize\ttfamily float Triangle\+::\+Get\+Perimeter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the perimeter of the object 
+
+\begin{DoxyReturn}{Returns}
+perimeter ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{class_triangle_a7da90f62a58fd888d68c8ffc4c64701b}\label{class_triangle_a7da90f62a58fd888d68c8ffc4c64701b} 
+\index{Triangle@{Triangle}!GetSides@{GetSides}}
+\index{GetSides@{GetSides}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{GetSides()}{GetSides()}}
+{\footnotesize\ttfamily void Triangle\+::\+Get\+Sides (\begin{DoxyParamCaption}\item[{float \&}]{s0,  }\item[{float \&}]{s1,  }\item[{float \&}]{s2 }\end{DoxyParamCaption})}
+
+
+
+get the sides of the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s0} & side 0 \\
+\hline
+{\em s1} & side 1 \\
+\hline
+{\em s2} & side 2 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_triangle_a69cd7fb4d208008ff6ec51367a558bb3}\label{class_triangle_a69cd7fb4d208008ff6ec51367a558bb3} 
+\index{Triangle@{Triangle}!Init@{Init}}
+\index{Init@{Init}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Triangle\+::\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} \&}]{o }\end{DoxyParamCaption})}
+
+
+
+initialization of the object as a copy of an object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & reference to the object that should be copied ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_triangle_ae34e100957bedf81493afcb4279ba8cc}\label{class_triangle_ae34e100957bedf81493afcb4279ba8cc} 
+\index{Triangle@{Triangle}!operator=@{operator=}}
+\index{operator=@{operator=}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_triangle}{Triangle}} \& Triangle\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} \&}]{o }\end{DoxyParamCaption})}
+
+
+
+overload of operator = 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & reference to the object on the right side of the operator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to the object on the left side of the operator ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{class_triangle_af0f8cd56fc1a3a6f23b6fa25eaa1a0c3}\label{class_triangle_af0f8cd56fc1a3a6f23b6fa25eaa1a0c3} 
+\index{Triangle@{Triangle}!operator==@{operator==}}
+\index{operator==@{operator==}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Triangle\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} \&}]{o }\end{DoxyParamCaption})}
+
+
+
+overload of operator == 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & reference to the object on the right side of the operator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always false ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{class_triangle_a489a2d36a014b9397779083376a0145f}\label{class_triangle_a489a2d36a014b9397779083376a0145f} 
+\index{Triangle@{Triangle}!SetSides@{SetSides}}
+\index{SetSides@{SetSides}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{SetSides()}{SetSides()}}
+{\footnotesize\ttfamily void Triangle\+::\+Set\+Sides (\begin{DoxyParamCaption}\item[{float}]{s1,  }\item[{float}]{s2,  }\item[{float}]{s3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+sets the value of the three sides 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & side 1 \\
+\hline
+{\em s2} & side 2 \\
+\hline
+{\em s3} & side 3 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_triangle_aea58cf673f6459406ff46c2947878dc0}\label{class_triangle_aea58cf673f6459406ff46c2947878dc0} 
+\index{Triangle@{Triangle}!WarningMessage@{WarningMessage}}
+\index{WarningMessage@{WarningMessage}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{WarningMessage()}{WarningMessage()}}
+{\footnotesize\ttfamily void Triangle\+::\+Warning\+Message (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string }\end{DoxyParamCaption})}
+
+
+
+write a warning message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & message to be printed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_triangle_8h}{CTriangle.\+h}}\item 
+CTriangle.\+cpp\end{DoxyCompactItemize}
