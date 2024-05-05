@@ -53,9 +53,20 @@ Triangle& Triangle::operator=(const Triangle &o) {
 
 /// @brief overload of operator == 
 /// @param o reference to the object on the right side of the operator 
-/// @return always false 
+/// @return true if sides are all equal 
 bool Triangle::operator==(const Triangle &o) {
-
+	if(sides[0] == o.sides[0] && sides[1] == o.sides[1] && sides[2] == o.sides[2])
+		return true;
+	if(sides[0] == o.sides[0] && sides[1] == o.sides[2] && sides[2] == o.sides[1])
+		return true;
+	if(sides[0] == o.sides[1] && sides[1] == o.sides[0] && sides[2] == o.sides[2])
+		return true;
+	if(sides[0] == o.sides[1] && sides[1] == o.sides[2] && sides[2] == o.sides[0])
+		return true;
+	if(sides[0] == o.sides[2] && sides[1] == o.sides[0] && sides[2] == o.sides[1])
+		return true;
+	if(sides[0] == o.sides[2] && sides[1] == o.sides[1] && sides[2] == o.sides[0])
+		return true;
 	return false;
 }
 
