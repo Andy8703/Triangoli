@@ -41,6 +41,12 @@ Triangle::~Triangle() {
 /// @param s3 side 3
 void Triangle::SetSides(float s1, float s2, float s3) {
 	
+	if (s1 >= s2+s3 || s2 >= s1+s3 || s3 >= s1+s2) {
+		printf ("Triangle -- SetSides ERROR -- Triangle is not possible to create");
+		Reset();
+		return;
+	}
+
 	sides[0] = s1;
 	sides[1] = s2;
 	sides[2] = s3;
