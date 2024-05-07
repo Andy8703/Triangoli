@@ -148,7 +148,7 @@ float Isosceles::GetHeight() {
 void Isosceles::SetDim(float w, float h) {
 
 	height = h;  
-	float l = sqrt(pow(w/2, 2) + pow(h, 2));
+	float l = (float)sqrt(pow(w/2, 2) + pow(h, 2));
 	Triangle::SetSides(w, l, l);
 	
 	return;

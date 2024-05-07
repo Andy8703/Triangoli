@@ -1,5 +1,12 @@
+/// \file CTriangle.cpp
+///	\brief class Triangle: implementation of the functions
+///
+///	Details.
+///
+
 #include "CTriangle.h"
 #include <math.h>
+#include <iostream>
 
 /// @brief default constructor 
 Triangle::Triangle() {
@@ -96,17 +103,17 @@ void Triangle::Reset() {
 
 /// @brief get the perimeter of the object
 /// @return perimeter 
-float Triangle::GetPerimeter() {
+double Triangle::GetPerimeter() {
 
-	return (sides[0]+sides[1]+sides[2]+sides[3]);
+	return (sides[0]+sides[1]+sides[2]);
 
 } 
 
 /// @brief get the area of the object
 /// @return area
-float Triangle::GetArea() {
+double Triangle::GetArea() {
 
-	float p = (Triangle::GetPerimeter())/2.0;
+	double p = (Triangle::GetPerimeter())/2.0;
 	return (sqrt(p*(p-sides[0])*(p-sides[1])*(p-sides[2])));
 
 }
