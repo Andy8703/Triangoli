@@ -8,26 +8,24 @@
 #define ISOSCELES_H
 
 #include<iostream>
-
-#include "CTriangle.h"
+#include "CScalene.h"
 
 using namespace std;
 
 /// @class Isosceles
 /// @brief to manage an object with the shape of an isosceles triangle
-class Isosceles : public Triangle
-{
+class Isosceles : public Scalene {
 protected:
+	float base;
 	float height;
+	double GetArea();
 
 public:
-	
 	/// @name CONSTRUCTORS/DESTRUCTOR
 	/// @{
 	Isosceles();
-	Isosceles(float w, float h);
+	Isosceles(float b, float h);
 	Isosceles(const Isosceles &r);
-	
 	~Isosceles();
 	/// @}
 	
@@ -44,27 +42,23 @@ public:
 	void Reset();												
 	/// @}
 	
-	
 	/// @name GETTERS / SETTERS
 	/// @{
 	void SetHeight(float h);
-	void SetWidth(float w);
-	void SetDim(float w, float h);
+	void SetBase(float b);
+	void SetDim(float b, float h);
 	
-	void GetDim(float &w, float &h);
+	void GetDim(float &b, float &h);
 	float GetHeight();
-	float GetWidth(); 
-	
+	float GetBase(); 
 	/// @}
-	
 	
 	/// @name DEBUG and SERIALIZATION 
 	/// @{
 	void ErrorMessage(const char *string); 
 	void WarningMessage(const char *string);
 	void Dump();
-	/// @}
-		
+	/// @}	
 };
 
 #endif

@@ -4,19 +4,17 @@
 	Details.
 */
 
-
 #ifndef EQUILATERAL_H
 #define EQUILATERAL_H
 
 #include <iostream>
-
-#include "CTriangle.h"
+#include "CScalene.h"
 
 using namespace std;
 
 /// @class Equilateral
 /// @brief to manage an object with the shape of an equilateral triangle
-class Equilateral : public Triangle
+class Equilateral : public Scalene
 {
 public:
 	
@@ -42,22 +40,20 @@ public:
 	void Reset();												
 	/// @}
 	
-	
 	/// @name GETTERS / SETTERS
 	/// @{
 	void SetDims(float s);
 
 	float GetSide();
+	double GetArea();
 	/// @}
-	
 	
 	/// @name DEBUG and SERIALIZATION 
 	/// @{
 	void ErrorMessage(const char *string); 
 	void WarningMessage(const char *string);
 	void Dump();
-	/// @}
-		
+	/// @}		
 };
 
 #endif

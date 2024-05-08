@@ -5,7 +5,7 @@
 ///
 
 #include <iostream> 
-#include <cmath>
+#include <math.h>
 #include "CEquilateral.h"
 
 /// @brief default constructor 
@@ -103,7 +103,7 @@ float Equilateral::GetSide() {
 /// @param s side
 void Equilateral::SetDims(float s) {
 
-	Triangle::SetSides(s, s, s);
+	Scalene::SetSides(s, s, s);
 	
 	return;
 }
@@ -126,6 +126,11 @@ void Equilateral::WarningMessage(const char *string) {
 
 }
 
+/// @brief get the area of the object
+double Equilateral::GetArea() {
+	double h = sqrt(pow(sides[0], 2) - pow((sides[0], 2), 2));
+	return (sides[0]*h)/2;
+}
 
 /// @brief for debugging: all about the object
 void Equilateral::Dump() {
@@ -135,7 +140,7 @@ void Equilateral::Dump() {
 	
 	cout << "Side = " << GetSide() << endl;
 	
-	Triangle::Dump();
+	Scalene::Dump();
 	
 	cout << endl;
 }

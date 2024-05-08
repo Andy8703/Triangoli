@@ -1,54 +1,51 @@
-/*! \file CTriangle.h
-	\brief Declaration of the general class Triangle
+/*! \file CScalene.h
+	\brief Declaration of the general class Scalene
 
 	Details.
 */
 
-
-#ifndef TRIANGLE_H
-#define TRIANGLE_H
+#ifndef SCALENE_H
+#define SCALENE_H
 
 #include <iostream>
 
 using namespace std;
 
-/// @class Triangle
-/// @brief an abstract base class for Triangle
-class Triangle {
+/// @class Scalene
+/// @brief an abstract base class for Scalene
+class Scalene {
 protected:
 
 	float sides[3];
 	
 	void SetSides(float s1, float s2, float s3); 
-
+	virtual double GetArea();
 
 public:
 
 	/// @name CONSTRUCTORS/DESTRUCTOR
 	/// @{
-	Triangle();
-	Triangle(const Triangle &o);
-	virtual ~Triangle();
+	Scalene();
+	Scalene(const Scalene &o);
+	virtual ~Scalene();
 	/// @}
 	
 	/// @name OPERATORS
 	/// @{
-	Triangle& operator=(const Triangle &o); 
-	bool operator==(const Triangle &o);
+	Scalene& operator=(const Scalene &o); 
+	bool operator==(const Scalene &o);
 	/// @}
 	
 	/// @name BASIC HANDLING
 	/// @{
 	void Init();												
-	void Init(const Triangle &o);							
+	void Init(const Scalene &o);							
 	void Reset();												
 	/// @}
-
-			
+	
 	/// @name GETTERS
 	/// @{
 	double GetPerimeter();
-	double GetArea();
 	void GetSides(float &s0, float &s1, float &s2);
 	/// @}
 	
@@ -58,7 +55,6 @@ public:
 	void WarningMessage(const char *string);
 	void Dump();
 	/// @}
-
 };
 
 #endif
